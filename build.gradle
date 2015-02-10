@@ -8,6 +8,8 @@ buildscript {
         classpath 'me.champeau.gradle:jbake-gradle-plugin:0.2'
         classpath 'org.jbake:jbake-core:2.3.2'
         classpath 'org.asciidoctor:asciidoctorj:1.5.2'
+        classpath 'org.ajoberstar:gradle-git:0.12.0'
+
     }
 }
 
@@ -15,13 +17,13 @@ apply plugin: 'base'
 apply plugin: 'jetty'
 apply plugin: 'me.champeau.jbake'
 apply plugin: 'com.github.ben-manes.versions'
+apply plugin: 'org.ajoberstar.github-pages'
 
 jbake {
     configuration['asciidoctor.attributes.export'] = true
     configuration['asciidoctor.attributes.export.prefix'] = 'jbake-'
     configuration['project-build-dir'] = project.buildDir.absolutePath
 }
-
 
 task(site, type: Copy, dependsOn: [jbake]) {
     destinationDir = file("$buildDir/site")
@@ -34,3 +36,21 @@ jettyRun {
 }
 
 task(siteRun, dependsOn: ['site', 'jettyRun']) { }
+
+if (!project.hasProperty('githubUsername')) ext.githubUsername = ''
+if (!project.hasProperty('githubPassword')) ext.githubPassword = ''
+
+githubPages {
+    repoUri = 'https://github.com/jsr377/site'
+    pages {
+        from site.outputs.files
+    }
+
+    credentials {
+        username = githubUsername
+        password = githubPassword
+    }
+}
+
+publishGhPages.dependsOn(site)
+
