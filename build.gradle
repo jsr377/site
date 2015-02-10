@@ -9,6 +9,8 @@ buildscript {
         classpath 'org.jbake:jbake-core:2.3.2'
         classpath 'org.asciidoctor:asciidoctorj:1.5.2'
         classpath 'org.ajoberstar:gradle-git:0.12.0'
+        classpath 'com.bluepapa32:gradle-watch-plugin:0.1.4'
+
 
     }
 }
@@ -18,6 +20,8 @@ apply plugin: 'jetty'
 apply plugin: 'me.champeau.jbake'
 apply plugin: 'com.github.ben-manes.versions'
 apply plugin: 'org.ajoberstar.github-pages'
+apply plugin: 'com.bluepapa32.watch'
+
 
 jbake {
     configuration['asciidoctor.attributes.export'] = true
@@ -28,6 +32,13 @@ jbake {
 task(site, type: Copy, dependsOn: [jbake]) {
     destinationDir = file("$buildDir/site")
     from jbake.output
+}
+
+watch {
+    site_gen {
+        files fileTree(dir: 'src/jbake', include: '**/*.adoc')
+        tasks 'site'
+    }
 }
 
 jettyRun {
