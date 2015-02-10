@@ -1,0 +1,50 @@
+= How to contribute to the JSR377 website?
+
+This website is build using the http://jbake.org[Jbake] static website generator. To contribute and preview your modification you'll need:
+
+ * a JDK (1.8 is nice, use it!),
+ * http://gradle.org/[Gradle 2.2],
+ * to add your modifications in Asciidoc for the content and GSP for the templating,
+ * to send a PR of your modification
+
+Before going in technical detail let's look at the nature of contributions
+
+== What to contribute to this website?
+
+First, unless your contribution is basic (typos and others grammatical glitches), we strongly suggest that you check with us on the link:http://jsr377-api.40747.n7.nabble.com/[Mailing List] to make us know about your contribution project. So we'll be able to guide you on this work. You can also start by drooping a github issue on https://github.com/jsr377/site/issues if you want to check the impact of your proposal.
+Right now (February 2015) you can already contribute to these part :
+
+ * site design (web designer or bootstrap gurus are most welcome to contribute)
+
+We're planning to enhance the website content by adding an official JSR377 tutorial and pointers to JSR377 initiatives in the community. So there'll probably be more content to contribute in the coming months. Stay tuned!
+
+== Installing a JDK
+
+There are many ways to get a JDK installed on your system depending on your OS of choice. Perhaps the easiest one is to download Oracle JDK directly from the link:http://www.oracle.com/technetwork/java/javase/downloads/index.html[source]. You may also opt for OpenJDK binaries.
+
+== Installing Gradle
+
+The website's build is self suficient, that is, you don't have to install Gradle from the link:http://gradle.org/[source] as long as you use the `gradlew` wrapper command. However, should you choose to install Gradle by yourself we recommend you to have a look at link:http://gvmtool.net/[GVM], and perhaps complement it with link:https://github.com/dougborg/gdub[gdub].
+
+== Work on the site
+
+Once it's done, you can generate and launch the site in local with the command
+
+    $ gradlew site siteRun
+
+or if you want a total cleanup before preview
+
+    $ gradlew site siteRun
+
+Jetty should be launched, generating the website and launching a local Web server on port 8080.
+So you can check the result of your work on http://localhost:8080
+
+To enable automatic publishing of changes you must run the `watch` task on a separate command prompt
+
+    $ gradlew watch
+
+Your modification should be published automatically. If you need more information on Asciidoc please check http://asciidoctor.org
+
+== Send your PR
+
+When your contribution is finished (again, please check with us on the ML or IRC before starting a big task on the site), you can send us on Pull Request on Github, we'll be happy to merge it.
