@@ -14,7 +14,7 @@
                          <%if (post.status == "published" && post.category == "news") {%>
                     <tr>
                         <td class="tableblock halign-left valign-top"><p class="tableblock">${post.date.format("dd MMM yyyy")}</p></td>
-                        <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="/${post.uri}">${post.title}</a></p></td>
+                        <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="<%if (content.rootpath) {%>${content.rootpath}<% } else { %><% }%>${post.uri}">${post.title}</a></p></td>
                     </tr>
                          <%}%>
                     <%}%>
