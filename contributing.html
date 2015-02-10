@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Guidelines for contributing to JSR377 via the Expert Group (EG)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+    <meta name="generator" content="JBake">
+
+    <!-- Le styles -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/asciidoctor.css" rel="stylesheet">
+    <link href="css/base.css" rel="stylesheet">
+    <link href="css/prettify.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body onload="prettyPrint()">
+    <div id="wrap">
+   
+
+
+        <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">JSR-377</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news/">News</a></li>
+            <li><a href="contributing.html">Contributing</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+    <div class="container">
+    
+    <div class="page-header">
+        <h1>Guidelines for contributing to JSR377 via the Expert Group (EG)</h1>
+    </div>
+
+    <p><div class="sect1">
+<h2 id="_eg_membership">EG Membership</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We develop JSR377 using an open mailing list. You don’t have to be an official member of the expert group to be part of the JSR377 community. We take into account all input from any member of the list</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Primary mailing list: <a href="http://jsr377-api.40747.n7.nabble.com/">jsr377 @ nabble</a></p>
+</li>
+<li>
+<p>JSR377 JCP page: <a href="https://jcp.org/en/jsr/detail?id=377">https://jcp.org/en/jsr/detail?id=377</a></p>
+</li>
+<li>
+<p>Twitter: <a href="https://twitter.com/jsr377">@jsr377</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You should note that by using any of the communication mechanisms associated with JSR377 (including the mailing list, the github repository and issue tracker) you agree that:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>for all code provided, you are licensing the code under the <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License, Version 2</a>.</p>
+</li>
+<li>
+<p>for all other ideas provided, the provider waives all patent and other intellectual property rights inherent in such information.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_resources">Resources</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In addition to the mailing lists, we use GitHub issues to track issues <a href="https://github.com/jsr377/jsr377-api/issues">https://github.com/jsr377/jsr377-api/issues</a>. If you want to register an error in the specification (use a <em>bug</em> label), request a clarification (use a <em>clarification</em> label) or request a new feature (user a <em>feature request</em> label), please create an issue.</p>
+</div>
+<div class="paragraph">
+<p>When you create an issue please set the Affects Version to 1.0 and do not set a Fix Version. The JSR377 specification lead (Andres Almiray) will check the issue, and either request clarification if the report is not clear, or raise it with the EG to discuss whether it should be fixed.</p>
+</div>
+<div class="paragraph">
+<p>The current draft of the specification is available on github at <a href="http://github.com/jsr377/jsr377-api">http://github.com/jsr377/jsr377-api</a> - you are welcome to clone this repository, and create patches and submit pull requests if you wish. It is the duty of the specification lead to ensure that the specification is consistent and well written, so expect some backwards and forwards before your patch is accepted!</p>
+</div>
+<div class="paragraph">
+<p>Having crafted your changes, please push them to your fork on github, and then create a pull request. This creates an easy forum in which the EG can review your changes.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_guidelines_for_interacting_with_the_eg">Guidelines for interacting with the EG</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>We hope the EG can be a friendly and informal place to work, and as such we have laid out a few guidelines which it will help if you follow.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Consider whether you want to send an email, or add a comment in the issue tracker. If you wish to discuss the merits of a change or request more explanation of a proposed change, then send an email. If you want to make a technical proposal or propose an API design, add a comment to an issue. There are no hard and fast rules about when to send an email vs add a comment, but remember that comments are there for posterity, and can help people understand why certain design decision was made.</p>
+</li>
+<li>
+<p>Try to make every post or comment say something meaningful. Endless "I agree" or "+1" emails aren&#8217;t that useful and distract from the real discussion about API improvements. Of course, if you strongly disagree with a proposal, please speak up, but in general silence is taken as approval!</p>
+</li>
+<li>
+<p>Please try keep the EG a pleasant place - there is no need for rants, swearing or personal comments - these cannot help the specification in anyway. If you want to make an argument, back it up with concrete statements and examples.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>We try to reach a consensus decision on all issues. If we can&#8217;t reach a consensus, we use polls to see what the wider community thinks. For issues on which a consensus still cannot be reached, and require a vote, we take the EG list from the JCP as the voting group.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_issue_resolution_rules">Issue Resolution Rules</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For minor issues where there is obvious fix and no one from the EG has commented, a pull request will be created and once reviewed by the spec lead, merged into master.</p>
+</div>
+<div class="paragraph">
+<p>For minor issues where there is discussion about how to fix, and for all major issues, a pull requests created when it appears that a consensus has been reached in the EG. Normally, the pull request will not be merged for at least 2 weeks, giving the EG time to review. If issues are raised by the EG then these will be addressed and the 2 week period restarted.</p>
+</div>
+<div class="paragraph">
+<p>If the EG cannot reach consensus, then a simple majority will decide the outcome (as determined by the spec lead). A similar 2 week period applies.</p>
+</div>
+<div class="paragraph">
+<p>Close to submission deadlines, the 2 week period may be truncated.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_community_sponsored_issues">Community Sponsored Issues</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>There are a number of issues which have merit (i.e. are addressing a valid problem/use case for JSR377) but which have not been identified as a priority by the spec lead. If an EG member wishes to see this issue resolved in the spec, then they can sponsor the issue. Practically this means that the sponsor:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>is responsible for the spec changes (with help/review from spec lead)</p>
+</li>
+<li>
+<p>is responsible for TCK tests (help from TCK lead, review from spec lead)</p>
+</li>
+<li>
+<p>is not responsible for implementing the feature in the RI</p>
+</li>
+</ul>
+</div>
+</div>
+</div></p>
+
+    <hr />
+
+        </div>
+        <div id="push"></div>
+    </div>
+    
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">&copy; 2015 JSR-377 | Mixed with <a href="http://getbootstrap.com/">Bootstrap v3.1.1</a> | Baked with <a href="http://jbake.org">JBake v2.3.2</a></p>
+      </div>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/prettify.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JSR-377</title>
+    <link>http://jsr377.github.com/site</link>
+    <atom:link href="http://jsr377.github.com/site/feed.xml" rel="self" type="application/rss+xml" />
+    <description>JSR-377</description>
+    <language>en-gb</language>
+    <pubDate>Tue, 10 Feb 2015 16:30:40 +0100</pubDate>
+    <lastBuildDate>Tue, 10 Feb 2015 16:30:40 +0100</lastBuildDate>
+
+    
+    <item>
+      <title>Review Ballot Results</title>
+      <link>http://jsr377.github.com/site/news/review_ballot_results.html</link>
+      <pubDate>Tue, 10 Feb 2015 00:00:00 +0100</pubDate>
+      <guid isPermaLink="false">news/review_ballot_results.html</guid>
+      <description>
+      &lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;review_ballot_results&quot;&gt;Review Ballot Results&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The JCP Executive Committed deliberated from Jan 27th to Feb 9th (2015) if this JSR should proceed or not. We are happy to report that the results are very positive!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The results of the Ballot can be viewed at &lt;a href=&quot;https://jcp.org/en/jsr/results?id=5744&quot; target=&quot;_blank&quot;&gt;https://jcp.org/en/jsr/results?id=5744&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Now that the first step has concluded, the JSR-377 Expert Group will continue with the next tasks:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;finishing the formation of the Expert Group.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;begin discussing the scope and features of this JSR at the &lt;a href=&quot;http://jsr377-api.40747.n7.nabble.com/&quot; target=&quot;_blank&quot;&gt;mailing list&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+      </description>
+    </item>
+    
+
+  </channel> 
+</rss>
