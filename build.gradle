@@ -1,0 +1,36 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.7'
+        classpath 'me.champeau.gradle:jbake-gradle-plugin:0.2'
+        classpath 'org.jbake:jbake-core:2.3.2'
+        classpath 'org.asciidoctor:asciidoctorj:1.5.2'
+    }
+}
+
+apply plugin: 'base'
+apply plugin: 'jetty'
+apply plugin: 'me.champeau.jbake'
+apply plugin: 'com.github.ben-manes.versions'
+
+jbake {
+    configuration['asciidoctor.attributes.export'] = true
+    configuration['asciidoctor.attributes.export.prefix'] = 'jbake-'
+    configuration['project-build-dir'] = project.buildDir.absolutePath
+}
+
+
+task(site, type: Copy, dependsOn: [jbake]) {
+    destinationDir = file("$buildDir/site")
+    from jbake.output
+}
+
+jettyRun {
+    contextPath = ''
+    webAppSourceDirectory = file(site.destinationDir)
+}
+
+task(siteRun, dependsOn: ['site', 'jettyRun']) { }

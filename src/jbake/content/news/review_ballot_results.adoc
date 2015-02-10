@@ -1,0 +1,20 @@
+= Review Ballot Results
+Andres Almiray
+2015-02-10
+:jbake-type: post
+:jbake-status: published
+:category: news
+:linkattrs:
+:idprefix:
+
+== Review Ballot Results
+
+The JCP Executive Committed deliberated from Jan 27th to Feb 9th (2015) if this JSR should proceed or not. We are happy to report that the results are very positive!
+
+The results of the Ballot can be viewed at link:https://jcp.org/en/jsr/results?id=5744[https://jcp.org/en/jsr/results?id=5744, window="_blank"].
+
+Now that the first step has concluded, the JSR-377 Expert Group will continue with the next tasks:
+
+ * finishing the formation of the Expert Group.
+ * begin discussing the scope and features of this JSR at the link:http://jsr377-api.40747.n7.nabble.com/[mailing list, window="_blank"].
+

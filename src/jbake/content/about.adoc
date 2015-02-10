@@ -1,0 +1,18 @@
+= About
+Andres Almiray
+:jbake-type: page
+:jbake-status: published
+:linkattrs:
+
+== The Site
+
+This site was created using http://jbake.org[JBake, window="_blank"] and the
+http://plugins.gradle.org/plugin/me.champeau.jbake[jbake-gradle, window="_blank"]
+plugin by https://twitter.com/cedricchampeau[@cedricchampeau].
+
+== Credits
+
+This site wouldn't be running if it weren't due to the efforts of the following people
+involved in its design, development and deployment
+
+ * TBD
