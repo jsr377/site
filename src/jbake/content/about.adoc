@@ -15,4 +15,8 @@ plugin by https://twitter.com/cedricchampeau[@cedricchampeau].
 This site wouldn't be running if it weren't due to the efforts of the following people
 involved in its design, development and deployment
 
- * TBD
+ * The JSR377 Expert Group
+
+This site is heavily influenced in the design and implementation of the
+link:http://www.cdi-spec.org/[cdi-spec.org, window="_blank"] website
+(link:https://github.com/cdi-spec/cdi-spec.org[source, window="_blank"]).
