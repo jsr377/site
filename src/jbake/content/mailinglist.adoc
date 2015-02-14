@@ -1,0 +1,11 @@
+= Mailing List
+Andres Almiray
+:jbake-type: page
+:jbake-status: published
+:linkattrs:
+
+[[nabblelink]]
+link:http://jsr377-api.40747.n7.nabble.com/[JSR377 Discussion List, window="_blank"]
+++++
+<script src="http://jsr377-api.40747.n7.nabble.com/embed/f1"></script>
+++++
