@@ -27,6 +27,8 @@ The current draft of the specification is available on github at http://github.c
 
 Having crafted your changes, please push them to your fork on github, and then create a pull request. This creates an easy forum in which the EG can review your changes.
 
+image:https://badges.gitter.im/Join%20Chat.svg[link="https://gitter.im/jsr377/jsr377-api?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"]
+
 == Guidelines for interacting with the EG
 
 We hope the EG can be a friendly and informal place to work, and as such we have laid out a few guidelines which it will help if you follow.
