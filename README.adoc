@@ -20,7 +20,7 @@ We're planning to enhance the website content by adding an official JSR377 tutor
 
 == Installing a JDK
 
-There are many ways to get a JDK installed on your system depending on your OS of choice. Perhaps the easiest one is to download Oracle JDK directly from the link:http://www.oracle.com/technetwork/java/javase/downloads/index.html[source]. You may also opt for OpenJDK binaries.
+There are many ways to get a JDK installed on your system depending on your OS of choice. Perhaps the easiest one is to download Oracle JDK directly from the link:http://www.oracle.com/technetwork/java/javase/downloads/index.html[source]. You may also opt for OpenJDK binaries. 
 
 == Installing Gradle
 
